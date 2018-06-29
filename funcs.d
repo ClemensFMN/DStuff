@@ -5,8 +5,6 @@ int f1(int a, int  b) {
   return(a+b);
 }
 
-
-
 int f2(const int a, const int  b) {
   // ++a; -> this throws an error
   return(a+b);
@@ -26,7 +24,6 @@ void farray2(ref int[] numbers) {
   }
 }
 
-
 void main() {
     writeln(f1(3,4));
     int res = f2(3,4);
@@ -35,12 +32,12 @@ void main() {
     int[] numbers  = [1,2,3,4];
     farray1(numbers);
     foreach(e; numbers) {
-    writeln(e);
-  }
+      writeln(e);
+    }
 
     farray2(numbers);
     foreach(e; numbers) {
-    writeln(e);
+      writeln(e);
   }
 
 
